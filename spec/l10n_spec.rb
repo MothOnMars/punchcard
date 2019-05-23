@@ -1,6 +1,6 @@
 require 'yaml'
 RSpec.describe "localization files" do
-  let(:non_es_en_yaml) { YAML.load_file('localizations/non_es_en_template.yml')['non_es_en_template'] }
+  let(:non_es_en_yaml) { YAML.load_file('localizations/en.yml')['en'] }
 
   non_es_en_yaml_files = Dir['localizations/*.yml']-["localizations/en.yml", "localizations/es.yml", "localizations/non_es_en_template.yml"]
   non_es_en_yaml_files.each do |filename|
